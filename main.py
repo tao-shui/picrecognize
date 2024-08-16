@@ -54,10 +54,6 @@ while input1!= "2":
     print("\n图片寻找中...")
     foundup = 0
     
-    #打开需要对比的图片
-    #pic1=Image.open(r"C:\Users\Administrator\Downloads\ppic\零售链接\A050.png")     
-    #pic2=Image.open(r"C:\Users\Administrator\Downloads\ppic\零售链接\A076.png")
-    #files = os.listdir(r"C:\Users\Administrator\Downloads\ppic\零售链接")
     wrongpic = 0
     dealpicnum = 0
     dealfiles = 0
@@ -78,7 +74,9 @@ while input1!= "2":
                     #print("调整图片大小中...")
     #将图片转换为灰度图像(彩色转黑白)，该步可以跳过，直接对比获取的差异平均值要比转化后的高
     #pic1_gray =pic1.convert('L')
-    #pic2_gray =pic2.convert('L')<br>#显示图片<br>pic1_gray.show()
+    #pic2_gray =pic2.convert('L')
+    #显示图片
+    # pic1_gray.show()
     #计算两张图片的差异，返回每个像素的差异
     #diff = ImageChops.difference(pic1_gray,pic2_gray)
                 diff = ImageChops.difference(pic1,pic2)
